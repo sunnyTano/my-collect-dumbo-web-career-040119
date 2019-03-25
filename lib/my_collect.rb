@@ -1,5 +1,14 @@
 def my_collect(collection)
-  collection 
+  i = 0 
+  while i < collection.length
+  yield(collection[i])
+  i += 1
+end
+collection
+end
+
+
+
 
 # describe "my_collect" do
 #   let(:languages) { ['ruby', 'javascript', 'python', 'objective-c'] }
